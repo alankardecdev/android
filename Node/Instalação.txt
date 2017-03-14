@@ -1,0 +1,20 @@
+Instalação de uma versão
+
+https://nodejs.org/en/download/
+
+ou
+
+Instalação de um gerenciador de versões do Node
+
+NVM (Node Version Management)
+
+Para Linux
+curl https://raw.githubusercontent.com/creationix/nvm/v0.23.2/install.sh | bash
+ou
+
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.23.2/install.sh | bash 
+
+Instalar o Node através do NVM
+nvm current 
+
+nvm install 0.10

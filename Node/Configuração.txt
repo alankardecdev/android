@@ -1,0 +1,55 @@
+O NPM (Node Package Management) é um gerenciador de pacotes/módulos do Node. Ele vem junto com o Node, tem versões e pode ser atualizado.
+
+https://www.npmjs.com/
+
+Para ver a versão do npm:
+npm -v
+
+Para criar um projeto Node, você usa o seguinte comando:
+npm init
+
+Documentação sobre os campos do npm init:
+npm help json
+
+Instalação de pacotes:
+De forma global
+npm install -g <pkg>
+
+De forma local no projeto
+npm install <pkg> --save
+
+Instalar o nodemon
+npm install -g nodemon
+Para executar a aplicação usar: nomemon app
+
+Instalar o express
+npm install express --save
+app.use(express.static('./principal/public')); // Com isto você acessa os arquivos estáticos partir do diretório public
+
+Instalar o EJS
+npm install ejs -save
+app.set('view engine', 'ejs');
+app.set('views', './app/views');
+
+Instalar o PostgresSQL
+npm install pg --save
+
+Instalar o Consign
+npm install consign --save
+consign()
+  .include('config/poolDeConexoes.js')
+  .then('principal/routes')
+  .then('principal/repositories')
+  .into(app);
+
+Instalar body-parser
+npm install body-parser --save
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+Instalar o express-validator
+npm install express-validator --save
+app.use(expressValidator());
+
+Instalar o Crypto
+npm install crypto --save
